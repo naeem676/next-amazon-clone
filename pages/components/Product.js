@@ -37,7 +37,7 @@ function Product({id, price, title, description, category, image}) {
             </div>
             {
                 hasPrime && <div className='flex items-center space-x-2 mt-5'>
-                    <img className='w-12' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Amazon_Prime_Logo.svg/1200px-Amazon_Prime_Logo.svg.png" alt=""/>
+                    <Image className='w-12' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Amazon_Prime_Logo.svg/1200px-Amazon_Prime_Logo.svg.png" alt=""/>
                     <p className='text-xs text-gray-500'>FREE Next-day Delivery</p>
                 </div>
             }
