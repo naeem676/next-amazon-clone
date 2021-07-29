@@ -12,7 +12,10 @@ function ProductFeed({ products }) {
                 description={description} category={category}
                  image={image}  />)
             }
-            <Image className='md:col-span-full' src="https://media-exp1.licdn.com/dms/image/C561BAQFjHL9EU0Yvvg/company-background_10000/0/1619644672652?e=2159024400&v=beta&t=XuCp_lpXR76nK6AAfdrGwZgEVPrlT_sRF1-dZZhw8nE" alt=""/>
+            <div className='md:col-span-full'>
+            <Image  src="https://media-exp1.licdn.com/dms/image/C561BAQFjHL9EU0Yvvg/company-background_10000/0/1619644672652?e=2159024400&v=beta&t=XuCp_lpXR76nK6AAfdrGwZgEVPrlT_sRF1-dZZhw8nE" height={200} width={1400} objectFit='fill' alt=""/>
+            </div>
+            
             <div className='md:col-span-2'>
                 {
                     products.slice(4, 5).map(({id, _id, price,  title, description, category, image}) => <Product key={_id} 

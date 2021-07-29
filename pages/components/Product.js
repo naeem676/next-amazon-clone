@@ -17,14 +17,14 @@ function Product({id, price, title, description, category, image}) {
             <p className='absolute top-2 right-2 text-xs italic text-gray-400'>{category}</p>
 
             <Image src={image} height={200} width={200} 
-            objectFit='contain' />
+            objectFit='contain' alt="product" />
             <h4 className='my-3'>{title}</h4>
             <div className='flex'>
                 {
                     Array(rating)
                     .fill()
                     .map(( _, i) =>
-                        <StarIcon className='h-5 text-yellow-500' />
+                        <StarIcon className='h-5 text-yellow-500' key={StarIcon} />
                     )
                 }
             </div>
@@ -36,8 +36,9 @@ function Product({id, price, title, description, category, image}) {
                prefix={'$'}/>
             </div>
             {
-                hasPrime && <div className='flex items-center space-x-2 mt-5'>
-                    <Image className='w-12' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Amazon_Prime_Logo.svg/1200px-Amazon_Prime_Logo.svg.png" alt=""/>
+                hasPrime && <div className='flex items-center space-x-2 mt-5 mb-2'>
+                    <Image 
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Amazon_Prime_Logo.svg/1200px-Amazon_Prime_Logo.svg.png" width={100} height={20} objectFit='contain' alt=""/>
                     <p className='text-xs text-gray-500'>FREE Next-day Delivery</p>
                 </div>
             }
