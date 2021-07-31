@@ -13,7 +13,7 @@ function Header() {
                 </div>
 
                 <div className='hidden sm:flex items-center h-10 rounded-md flex-grow bg-yellow-400 hover:bg-yellow-500 cursor-pointer'>
-                    <input className='p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none'  type="text" name="" value=""/>
+                    <input className='p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none' readOnly  type="text" placeholder='Search' name="" value=""/>
                           <SearchIcon className='h-12 p-4' />
                 </div>
                 <div className="flex text-white items-center text-xs space-x-6 mx-6 whitespace-nowrap">
