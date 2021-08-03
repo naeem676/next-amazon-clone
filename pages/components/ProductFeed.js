@@ -34,4 +34,4 @@ function ProductFeed({ products }) {
     )
 }
 
-export default ProductFeed
+export default ProductFeed;
