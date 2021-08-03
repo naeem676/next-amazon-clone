@@ -3,7 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import Currency from 'react-currency-formatter';
 import { useDispatch } from "react-redux";
-import { addToBasket } from "../slice/basketSlice";
+import { addToBasket } from "../../slice/basketSlice";
+
 
 
 function Product({id, price, title, description, category, image}) {

@@ -1,6 +1,6 @@
 
 import { configureStore } from "@reduxjs/toolkit";
-import basketSlice from "../pages/slice/basketSlice";
+import basketSlice from "../slice/basketSlice";
 
 
 export const store = configureStore({

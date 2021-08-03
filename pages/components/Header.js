@@ -4,7 +4,7 @@ import { SearchIcon, MenuIcon, ShoppingCartIcon } from '@heroicons/react/outline
 import { signIn, signOut, useSession } from 'next-auth/client';
 import { useRouter } from 'next/dist/client/router';
 import { useSelector } from 'react-redux';
-import { selectItem } from '../slice/basketSlice';
+import { selectItem } from '../../slice/basketSlice';
 
 function Header() {
 
