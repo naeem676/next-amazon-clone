@@ -1,4 +1,6 @@
+import { getSession } from 'next-auth/client';
 import Head from 'next/head';
+
 import Banner from './components/Banner';
 import Header from './components/Header';
 import ProductFeed from './components/ProductFeed';
@@ -29,12 +31,14 @@ export default function Home({ products }) {
 }
 
 export async function getServerSideProps(context){
+  const session = await getSession(context)
   const products = await fetch("https://secret-brushlands-54492.herokuapp.com/allproducts").then(
     res => res.json()
   );
   return{
     props:{
-      products:products,
+      products,
+      session,
     }
   }
 }

@@ -10,7 +10,8 @@ module.exports = {
      "images.krisshop.com",
      "images-eu.ssl-images-amazon.com",
      "media-exp1.licdn.com",
-     "www.junglescout.com"
+     "www.junglescout.com",
+     "https://fakestoreapi.com"
     ]
   },
 }
