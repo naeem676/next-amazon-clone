@@ -16,7 +16,7 @@ function MyOrder({id, amount, amountShipping, items, timestamp, images}) {
                         <CurrencyFormat quantity={amountShipping} currency='EUR'/>
                     </p>
                 </div>
-                <p className='text-xs whitespace-nowrap sm:text-xl self-end flex-1 text-right text-blue-500'>{items.length} items</p>
+                <p className='text-xs whitespace-nowrap sm:text-xl self-end flex-1 text-right text-blue-500'>{items?.length} items</p>
                 <p className='absolute top-2 right-2 w-40 lg:w-72 truncate text-xs whitespace-nowrap'>
                     ORDER # {id}
 
