@@ -13,7 +13,7 @@ function MyOrder({id, amount, amountShipping, items, timestamp, images}) {
                     <p className='text-xs font-bold'>TOTAL</p>
                     <p>
                         <CurrencyFormat quantity={amount} currency='USD' /> - Next Day Delivery{" "}
-                        <CurrencyFormat quantity={amountShipping} currency='USD'/>
+                        <CurrencyFormat quantity={amountShipping} currency='EUR'/>
                     </p>
                 </div>
                 <p className='text-xs whitespace-nowrap sm:text-xl self-end flex-1 text-right text-blue-500'>{items.length} items</p>

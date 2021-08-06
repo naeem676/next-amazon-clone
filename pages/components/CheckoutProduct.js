@@ -31,7 +31,7 @@ function CheckoutProduct({id, hasPrime, rating, price, title, description, categ
              <p className='text-xs my-2 line-clamp-3'>{description}</p>
              <CurrencyFormat
                quantity={price} 
-               currency='USD'/>
+               currency='EUR'/>
                {
                 hasPrime && <div className='flex items-center space-x-2 mt-5 mb-2'>
                     <Image 

@@ -68,7 +68,7 @@ function Checkout() {
                             <h2 className='whitespace-nowrap'>
                                 Subtotal ({items.length}):{" "}<span className='font-bold'>
                                 <CurrencyFormat
-                            quantity={total} currency='USD'
+                            quantity={total} currency='EUR'
                             />
                             </span>
                             </h2>
